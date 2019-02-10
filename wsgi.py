@@ -11,8 +11,6 @@ def hello():
     driver = webdriver.Remote(command_executor='http://:4444/wd/hub',desired_capabilities=capabilities)
     driver.get("https://www.google.com")
     driver.save_screenshot('screenshot.png')
-    assert "Google" in driver.title
-    assert True
     driver.quit()
     return "Hello World! DMM"
 
