@@ -12,7 +12,7 @@ def hello():
     driver.get("https://www.google.com")
     driver.save_screenshot('screenshot.png')
     driver.quit()
-    return "Hello World! DMM"
+    return jsonify(user=100)
 
 if __name__ == "__main__":
     application.run()
